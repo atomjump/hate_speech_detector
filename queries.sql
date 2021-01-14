@@ -5,7 +5,7 @@ select int_layer_id, var_shouted, flt_sentiment from tbl_ssshout where flt_senti
 
 
 -- You can read the full comments from a particular forum with --
-select int_layer_id, date_when_shouted, var_shouted from tbl_ssshout where int_layer_id = 65 order by int_ssshout_id desc limit 100;
+select int_layer_id, date_when_shouted, flt_sentiment, var_shouted from tbl_ssshout where int_layer_id = 65 order by int_ssshout_id desc limit 100;
 
 
 -- To block a particular forum, by changing it's password (in this case the forum 65)
