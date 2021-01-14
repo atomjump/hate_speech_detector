@@ -1,5 +1,5 @@
 # hate_speech_detector
-A plugin to the AtomJump Messaging Server for helping to detect hate speech
+A plugin to the AtomJump Messaging Server for helping to detect hate speech.
 
 It needs some basic command-line technical skills, still, and is particularly useful for blocking whole forums.
 
@@ -7,8 +7,6 @@ It needs some basic command-line technical skills, still, and is particularly us
 2. Use the forum number from 1. and get a list of all the comments on that forum.
 3. If it is clearly being misused, change the password to that forum, so that nobody can access it
 4. (Optionally) remove the password to that forum to let people back on
-
-We will likely build a more extensive interface and flexible system in the future.
 
 You must be able to access the raw MySQL database file and be familiar with writing SQL queries.
 
@@ -22,3 +20,10 @@ select int_layer_id, date_when_shouted, flt_sentiment, var_shouted from tbl_sssh
 ```
 
 And then further queries are available in the file queries.sql.
+
+Note: the sentiment values are currently set up to detect English hate-speech. 
+
+## Future development
+
+* We will likely need to build a more extensive interface and provide other approaches to detection, also.
+* To make this fully international, we can investigate the multi-lingual version of the sentiment tool that is used in AtomJump Server's node/sentiment.js file. See: https://www.npmjs.com/package/sentiment-multilingual
