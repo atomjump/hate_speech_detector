@@ -1,7 +1,12 @@
 # hate_speech_detector
 A plugin to the AtomJump Messaging Server for helping to detect hate speech
 
-This is in a basic database query format, at the moment.
+It needs some basic command-line technical skills, still, and is particularly useful for blocking whole forums.
+
+1. Get a list of the 100 (very) negative recent comments, and the forum numbers of them
+2. Use the forum number from 1. and get a list of all the comments on that forum.
+3. If it is clearly being misused, change the password to that forum, so that nobody can access it
+4. (Optionally) remove the password to that forum to let people back on
 
 We will likely build a more extensive interface and flexible system in the future.
 
