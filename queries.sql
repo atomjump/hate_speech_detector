@@ -14,6 +14,6 @@ select int_layer_id, date_when_shouted, flt_sentiment, var_shouted from tbl_sssh
 update tbl_layer set var_public_code = md5('yourpassword') where int_layer_id = 65;
 
 
--- If you want to unblock the forum again, use --
+-- If you want to unblock the forum again (in this case the forum 65), use --
 update tbl_layer set var_public_code = NULL where int_layer_id = 65;
 
