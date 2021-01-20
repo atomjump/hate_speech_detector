@@ -23,6 +23,19 @@ And then further queries are available in the file queries.sql.
 
 Note: the sentiment values are currently set up to detect English hate-speech. 
 
+
+## Appliance Users
+
+Once you are logged into your AtomJump Appliance (with your own login details), the standard credentials for the database are:
+
+```
+sudo /jet/bin/mysql -u atomjump -p
+[The 1st time here you will need to enter your 'aj_customer' user's password first, which has a default of 'lander5321', until you changed it during the installation]
+Enter password: nemesis1235
+use atomjump;
+```
+
+
 ## Future development
 
 * We will likely need to build a more extensive interface and provide other approaches to detection, also.
