@@ -1,4 +1,7 @@
 # hate_speech_detector
+
+__WARNING: this project has now moved to https://src.atomjump.com/atomjump/hate_speech_detector.git__
+
 A plugin to the AtomJump Messaging Server for helping to detect hate speech.
 
 It needs some basic command-line technical skills, still, and is particularly useful for blocking whole forums.
